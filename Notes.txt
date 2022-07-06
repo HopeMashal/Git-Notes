@@ -49,14 +49,18 @@ Hello, Git
 ** Open the folder, you want to push it --> cd folder_path 
 * cd.. --> Go to the folder that contains this folder 
 ===> git init #Git repo
-===> git status #Show the folder state --> بنشوف حالة الفايل اذا مرفوع او لا واذا في تغييرات
+===> git status #Show the folder state & Branch --> بنشوف حالة الفايل اذا مرفوع او لا واذا في تغييرات
 ===> git add . #Add all files
 ===> git add * #Add all files
 ===> git add file_name.file_type
 ===> git add *.txt   #Add all text files
 
 
+===> git rm --cached <file>.. ---> to unstage (بشيله من الريبو)
+
+
 ** Extra
 ===> git ls-files # See the files in git repo
+===> git ls-files -s # See the files in git repo with shasum
 ===> find .git/objects/ -type f #find file in .git/objects/
 
