@@ -24,3 +24,32 @@
 
 ** Git read the value with {blob (#_of_char+1)\0}
 
+** To save the change in the file
+===> git add 
+===> git commit
+
+===> clear # clear all comments
+
+** User Information --> ~/.gitconfig
+===> git config --global user.name "Hope Mashal"
+===> git config --global user.email "mashal.hope@gmail.com"
+
+===> git config --list
+user.name=Hope Mashal
+user.email=mashal.hope@gmail.com
+
+===>mkdir gitwork #create folder
+===> cd gitwork/ #open folder
+===> ls #list of files in this folder
+===> echo "Hello, Git" >> file.txt #write "Hello, Git" in file
+===> cat file.txt #read the file
+Hello, Git
+===> ls -al #list of files in this folder with rwx values
+
+** Open the folder, you want to push it --> cd folder_path 
+* cd.. --> Go to the folder that contains this folder 
+===> git init #Git repo
+===> git status #Show the folder state --> بنشوف حالة الفايل اذا مرفوع او لا واذا في تغييرات
+
+===> git ls-files # See the files in git repo
+===> find .git/objects/ -type f #find file in .git/objects/
