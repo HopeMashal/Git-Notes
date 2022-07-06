@@ -1,0 +1,26 @@
+** Notation:
+  --> Input
+  => Output
+
+** echo => print
+
+--> echo "Hello, Git"
+=> Hello, Git
+
+--> echo "Hello, Git" | git hash-object --stdin
+=> Address_1 (Hexadecimal)
+
+--> echo "Hello, Git" | shasum
+=> Address_2 (Hexadecimal)
+
+--> echo "blob 11\0Hello, Git"
+=> blob 11\0Hello, Git
+
+--> echo -e "blob 11\0Hello, Git"
+=> blob 11Hello, Git
+
+--> echo -e "blob 11\0Hello, Git"  | shasum
+=> Address_1 (Hexadecimal)
+
+** Git read the value with {blob (#_of_char+1)\0}
+
