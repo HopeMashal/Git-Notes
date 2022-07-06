@@ -50,6 +50,13 @@ Hello, Git
 * cd.. --> Go to the folder that contains this folder 
 ===> git init #Git repo
 ===> git status #Show the folder state --> بنشوف حالة الفايل اذا مرفوع او لا واذا في تغييرات
+===> git add . #Add all files
+===> git add * #Add all files
+===> git add file_name.file_type
+===> git add *.txt   #Add all text files
 
+
+** Extra
 ===> git ls-files # See the files in git repo
 ===> find .git/objects/ -type f #find file in .git/objects/
+
