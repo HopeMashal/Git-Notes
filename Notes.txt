@@ -63,4 +63,6 @@ Hello, Git
 ===> git ls-files # See the files in git repo
 ===> git ls-files -s # See the files in git repo with shasum
 ===> find .git/objects/ -type f #find file in .git/objects/
-
+===> git cat-file -t Address_1 --> Output is: blob
+===> git cat-file -s Address_1 --> Output is: 11 (size)
+===> git cat-file -p Address_1 --> Output is: Hello, Git
