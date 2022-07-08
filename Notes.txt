@@ -54,6 +54,8 @@ Hello, Git
 ===> git add * #Add all files
 ===> git add file_name.file_type
 ===> git add *.txt   #Add all text files
+===> git commit -m 'your_msg' #Add commit text (new version --> (blobs and trees) & date & user information) -> (commit => tree => blobs)
+===> git log #Repo(Commit) History
 
 
 ===> git rm --cached <file>.. ---> to unstage (بشيله من الريبو)
