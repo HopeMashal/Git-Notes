@@ -48,19 +48,34 @@ Hello, Git
 
 ** Open the folder, you want to push it --> cd folder_path 
 * cd.. --> Go to the folder that contains this folder 
+
 ===> git clone folder_link.git
+
 ===> git init #Git repo
 ===> git status #Show the folder state & Branch --> بنشوف حالة الفايل اذا مرفوع او لا واذا في تغييرات
 ===> git status -s #بختصر الرسالة السابقة
+
 ===> git add . #Add all files
 ===> git add * #Add all files
 ===> git add file_name.file_type
 ===> git add *.txt   #Add all text files
-===> git commit -m 'your_msg' #Add commit text (new version --> (blobs and trees and parents) & date & user information) -> (commit => tree (parent) => blobs)
+
+===> git commit -m 'your_msg' #Add commit text (new version --> (blobs and trees and parents) & date & user information) -> (commit => tree => parent => blobs)
 ===> git log #Repo(Commit) History
+
+===> git diff #Show the difference in all files (between unstage and index(stage))
+===> git diff --staged #Show the difference in all files (between index(stage) and repo)
+
 ===> git push #Push your files from your computer to internet
 ===> git pull #Pull the files from internet to your computer
 
+===> git config --global core.editor "vim"
+===> git commit --> You can type any comments here!!
+===> git log
+===> git log --oneline
+===> git log --oneline file_name.file_type #Filter all commit for this file
+===> git log --oneline -2 #Get the last two commits
+===> git log --oneline --graph
 
 ===> git rm --cached <file>.. ---> to unstage (بشيله من الريبو)
 
