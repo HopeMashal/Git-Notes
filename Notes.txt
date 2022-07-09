@@ -113,7 +113,11 @@ Hello, Git
 ===> git checkout branch_name #Switched to branch 'branch_name'
 ==>git show HEAD #Show the head state (commit,..etc)
 
+===> git switch master
 ===> git merge branch_name #To merge branch_name into master
+
+===> git branch --merged #Show all branches that merged into master
+===> git branch -d branch_name #To delete this branch
 
 
 ** Extra
