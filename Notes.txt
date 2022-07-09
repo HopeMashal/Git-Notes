@@ -82,7 +82,19 @@ Hello, Git
 ===> git log --oneline --graph
 ===> git diff commit#1_sha..commit#2_sha #Show the difference between two commits
 
-===> git rm --cached <file>.. ---> to unstage (بشيله من الريبو)
+===> git mv #To move the file
+
+===> rm -rf .git/ #Delete the repo
+
+===> git rm --cached file_name.file_type ---> to unstage (بشيله من الريبو)
+
+===> git restore file_name/file_type #بلغي التغيير يلي صار وبرجعه للحالة الموجودة في الريبو 
+
+===> git restore --stage file_name/file_type # الملف موجود بالستيج او الاندكس بدي الغي التغيير يلي صار 
+
+===> git commit -am "commit_msg" # Add & Commit together
+
+===> git commit --amend #Edit the last commit msg
 
 
 ** Extra
