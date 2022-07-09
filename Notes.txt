@@ -96,6 +96,13 @@ Hello, Git
 
 ===> git commit --amend #Edit the last commit msg
 
+===> git reset HEAD~1 #برجع للكومت القبل الاخير
+===> git reset --hard HEAD~1 # برجع للكومت يلي قبل الاخير وبحذف الكومت الاخير 
+===> git reflog # All history of commits
+===> git reset -- hard HEAD@{1} # برجع للكومت يلي حذفته بالامر السابق
+
+
+
 
 ** Extra
 ===> git ls-files # See the files in git repo
