@@ -77,6 +77,11 @@ Hello, Git
 ===> git log --oneline -2 #Get the last two commits
 ===> git log --oneline --graph
 
+===> git show commit_sha #Show the difference and commit msg
+
+===> git log --oneline --graph
+===> git diff commit#1_sha..commit#2_sha #Show the difference between two commits
+
 ===> git rm --cached <file>.. ---> to unstage (بشيله من الريبو)
 
 
