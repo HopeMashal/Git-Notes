@@ -2,6 +2,8 @@
   --> Input
   => Output
 
+__________________________________________________
+
 ** echo => print
 
 --> echo "Hello, Git"
@@ -24,11 +26,13 @@
 
 ** Git read the value with {blob (#_of_char+1)\0}
 
+__________________________________________________
+
 ** To save the change in the file
 ===> git add 
 ===> git commit
 
-===> clear # clear all comments
+__________________________________________________
 
 ** User Information --> ~/.gitconfig
 ===> git config --global user.name "Hope Mashal"
@@ -38,6 +42,11 @@
 user.name=Hope Mashal
 user.email=mashal.hope@gmail.com
 
+__________________________________________________
+
+** Some Commands:
+
+===> clear # clear all comments
 ===>mkdir gitwork #create folder
 ===> cd gitwork/ #open folder
 ===> ls #list of files in this folder
@@ -49,26 +58,45 @@ Hello, Git
 ** Open the folder, you want to push it --> cd folder_path 
 * cd.. --> Go to the folder that contains this folder 
 
+__________________________________________________
+
+** Git Commands:
+
 ===> git clone folder_link.git
 
 ===> git init #Git repo
 ===> git status #Show the folder state & Branch --> بنشوف حالة الفايل اذا مرفوع او لا واذا في تغييرات
 ===> git status -s #بختصر الرسالة السابقة
 
+__________________________________________________
+
+*** Add Commands
 ===> git add . #Add all files
 ===> git add * #Add all files
 ===> git add file_name.file_type
 ===> git add *.txt   #Add all text files
 
+__________________________________________________
+
+*** Commit Commands
 ===> git commit -m 'your_msg' #Add commit text (new version --> (blobs and trees and parents) & date & user information) -> (commit => tree => parent => blobs)
 ===> git log #Repo(Commit) History
 
+__________________________________________________
+
+*** Difference Commands
 ===> git diff #Show the difference in all files (between unstage and index(stage))
 ===> git diff --staged #Show the difference in all files (between index(stage) and repo)
 
+__________________________________________________
+
+*** Push/Pull Commands
 ===> git push #Push your files from your computer to internet
 ===> git pull #Pull the files from internet to your computer
 
+__________________________________________________
+
+*** Log Commands
 ===> git config --global core.editor "vim"
 ===> git commit --> You can type any comments here!!
 ===> git log
@@ -82,12 +110,18 @@ Hello, Git
 ===> git log --oneline --graph
 ===> git diff commit#1_sha..commit#2_sha #Show the difference between two commits
 
+__________________________________________________
+
+*** Move/Remove Commands
 ===> git mv #To move the file
 
 ===> rm -rf .git/ #Delete the repo
 
 ===> git rm --cached file_name.file_type ---> to unstage (بشيله من الريبو)
 
+__________________________________________________
+
+*** Restore Commits Commands
 ===> git restore file_name/file_type #بلغي التغيير يلي صار وبرجعه للحالة الموجودة في الريبو 
 
 ===> git restore --stage file_name/file_type # الملف موجود بالستيج او الاندكس بدي الغي التغيير يلي صار 
@@ -96,22 +130,35 @@ Hello, Git
 
 ===> git commit --amend #Edit the last commit msg
 
+__________________________________________________
+
+*** Reset Commits Commands
 ===> git reset HEAD~1 #برجع للكومت القبل الاخير
 ===> git reset --hard HEAD~1 # برجع للكومت يلي قبل الاخير وبحذف الكومت الاخير 
 ===> git reflog # All history of commits
 ===> git reset -- hard HEAD@{1} # برجع للكومت يلي حذفته بالامر السابق
 
+__________________________________________________
+
+*** Tag Commands
 ===> git tag -a v2.0 -m "Version 2.0 of file" #To add tag for the commit --> بعملها بعمل ما اعمل الكومت على طول
 ===> git show v2.0 #Find the commit have this tag
 
-===> alias #Show some comments/operators
-===> graph #Like git log --oneline
+__________________________________________________
 
+*** Alias Commands
+===> alias #Show some comments/operators
+===> alias graph="git log --oneline --all --graph --decorate"
+===> graph #Like git log --oneline --> تم تعريفها فوق
+
+__________________________________________________
+
+*** Branch Commands
 ===> git branch branch_name # create new branch
 ===> git branch #Show all branches
 ===> git switch branch_name #Switched to branch 'branch_name'
 ===> git checkout branch_name #Switched to branch 'branch_name'
-==>git show HEAD #Show the head state (commit,..etc)
+===>git show HEAD #Show the head state (commit,..etc)
 
 ===> git switch master
 ===> git merge branch_name #To merge branch_name into master
@@ -119,6 +166,18 @@ Hello, Git
 ===> git branch --merged #Show all branches that merged into master
 ===> git branch -d branch_name #To delete this branch
 
+__________________________________________________
+
+*** Remote Commands
+===> git remote #View the source of the repo --> origin -> (When you did git clone Files_Link.git)
+===> git remote -v #View the source of the repo with details (push & fetch)
+===> git branch -r #View all branch for remote
+===> git fetch remote_name -> ex. { git fetch origin } #Show all update in this remote 
+===> git merge #Merge remote update to your local
+===> git pull #Pull remote update to your local
+===> git push #Push your local to remote 
+
+__________________________________________________
 
 ** Extra
 ===> git ls-files # See the files in git repo
@@ -127,3 +186,5 @@ Hello, Git
 ===> git cat-file -t Address_1 --> Output is: blob
 ===> git cat-file -s Address_1 --> Output is: 11 (size)
 ===> git cat-file -p Address_1 --> Output is: Hello, Git
+
+__________________________________________________
