@@ -136,7 +136,7 @@ __________________________________________________
 ===> git reset HEAD~1 #برجع للكومت القبل الاخير
 ===> git reset --hard HEAD~1 # برجع للكومت يلي قبل الاخير وبحذف الكومت الاخير 
 ===> git reflog # All history of commits
-===> git reset -- hard HEAD@{1} # برجع للكومت يلي حذفته بالامر السابق
+===> git reset --hard HEAD@{1} # برجع للكومت يلي حذفته بالامر السابق
 
 __________________________________________________
 
@@ -174,8 +174,14 @@ __________________________________________________
 ===> git branch -r #View all branch for remote
 ===> git fetch remote_name -> ex. { git fetch origin } #Show all update in this remote 
 ===> git merge #Merge remote update to your local
-===> git pull #Pull remote update to your local
+===> git pull / git pull origin #Pull (Fetch & Merge together) remote update to your local
 ===> git push #Push your local to remote 
+
+--> If you create branch and wanna push your updates to remote, Do the following:
+===> git push -u origin branch_name #Push Branch to remote (u == up-stream)
+
+===> git branch -v #Show branch with details
+===> git branch -vv #Show branch with details with tracking
 
 __________________________________________________
 
