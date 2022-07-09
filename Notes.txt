@@ -58,6 +58,8 @@ Hello, Git
 ** Open the folder, you want to push it --> cd folder_path 
 * cd.. --> Go to the folder that contains this folder 
 
+===> code . #Open this folder into visual studio code
+
 __________________________________________________
 
 ** Git Commands:
